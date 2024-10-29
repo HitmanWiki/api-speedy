@@ -1,0 +1,23 @@
+{
+    "version": 2,
+    "builds": [
+        {
+            "src": "api.js",
+            "use": "@vercel/node"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/api/total-supply",
+            "dest": "api.js"
+        },
+        {
+            "src": "/api/circulating-supply",
+            "dest": "api.js"
+        },
+        {
+            "src": "/api/max-supply",
+            "dest": "api.js"
+        }
+    ]
+}
